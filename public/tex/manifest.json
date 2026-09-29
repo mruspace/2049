@@ -1,0 +1,184 @@
+{
+  "sun": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.41268,
+    "meanRgb": [
+      1,
+      0.3315,
+      0.0558
+    ]
+  },
+  "mercury": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.24372,
+    "meanRgb": [
+      1,
+      0.9851,
+      0.9839
+    ]
+  },
+  "venus_atmosphere": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.50592,
+    "meanRgb": [
+      1,
+      0.6565,
+      0.2778
+    ]
+  },
+  "earth_daymap": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.21922,
+    "meanRgb": [
+      0.6852,
+      0.7422,
+      1
+    ]
+  },
+  "earth_nightmap": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.00637,
+    "meanRgb": [
+      0.5174,
+      0.52,
+      1
+    ]
+  },
+  "earth_clouds": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.12821,
+    "meanRgb": [
+      1,
+      1,
+      1
+    ]
+  },
+  "earth_normal": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "normal"
+  },
+  "earth_specular": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "mask"
+  },
+  "moon": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.32554,
+    "meanRgb": [
+      1,
+      0.9489,
+      0.941
+    ]
+  },
+  "mars": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.25597,
+    "meanRgb": [
+      1,
+      0.3026,
+      0.195
+    ]
+  },
+  "jupiter": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.36135,
+    "meanRgb": [
+      1,
+      0.9239,
+      0.8125
+    ]
+  },
+  "saturn": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "color",
+    "meanLinear": 0.52035,
+    "meanRgb": [
+      1,
+      0.8359,
+      0.5745
+    ]
+  },
+  "saturn_ring": {
+    "tiers": [
+      2048,
+      4096
+    ],
+    "kind": "ring"
+  },
+  "uranus": {
+    "tiers": [
+      2048
+    ],
+    "kind": "color",
+    "meanLinear": 0.53028,
+    "meanRgb": [
+      0.5121,
+      0.9269,
+      1
+    ]
+  },
+  "neptune": {
+    "tiers": [
+      2048
+    ],
+    "kind": "color",
+    "meanLinear": 0.17804,
+    "meanRgb": [
+      0.0925,
+      0.218,
+      1
+    ]
+  },
+  "milkyway": {
+    "tiers": [
+      2048
+    ],
+    "kind": "sky",
+    "peakLinear": 0.15586
+  }
+}

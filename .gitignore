@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Raw upstream downloads. Only the packed/encoded output is committed.
+tools/.cache/

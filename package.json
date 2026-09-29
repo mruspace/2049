@@ -1,0 +1,43 @@
+{
+  "name": "mru-2049",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mru 2049 — a browser flight simulator across the real solar system and the nearby galaxy.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check": "tsc --noEmit && vitest run && eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "data:fetch": "node tools/fetch-sources.mjs",
+    "data:stars": "node tools/pack-stars.mjs",
+    "data:messier": "node tools/messier.mjs",
+    "data:textures": "node tools/encode-textures.mjs",
+    "data": "npm run data:fetch && npm run data:stars && npm run data:messier && npm run data:textures && npm run data:basis",
+    "data:basis": "node tools/copy-basis.mjs",
+    "postinstall": "node tools/copy-basis.mjs"
+  },
+  "dependencies": {
+    "astronomy-engine": "2.1.19",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.0.0",
+    "ktx2-encoder": "^0.6.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^7.0.0",
+    "vitest": "^3.0.0"
+  }
+}

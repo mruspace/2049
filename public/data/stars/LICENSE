@@ -1,0 +1,18 @@
+These files are derived from the HYG Database v4.4.
+
+    stars.bin
+    star-ids.bin
+    star-names.json
+
+Source:  https://codeberg.org/astronexus/hyg
+Author:  David Nash (astronexus)
+License: Creative Commons Attribution-ShareAlike 4.0 International
+         https://creativecommons.org/licenses/by-sa/4.0/
+
+Changes made: the CSV was filtered (the Sun and rows with unusable parallax
+were removed) and repacked into a binary layout, and the B-V colour index was
+converted to a linear sRGB triple.
+
+These data files are licensed CC BY-SA 4.0, separately from the source code of
+this project, which is Apache-2.0. The share-alike term applies to these files
+and to adaptations of them. It does not apply to the rest of the repository.
