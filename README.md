@@ -9,6 +9,8 @@
 
 # Mru 2049
 
+Lab project. Not part of Mru Flight or Mru Field.
+
 A browser flight simulator. You sit in a rocket cockpit and fly anywhere in the
 solar system and out into the nearby galaxy, on real astronomical data.
 
