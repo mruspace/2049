@@ -171,7 +171,7 @@ luminance-weighted mean does not.
 
 ### Data
 
-| What | Source | Licence |
+| What | Source | License |
 |---|---|---|
 | Stars | HYG database v4.4 | CC BY-SA 4.0 |
 | Planet positions | astronomy-engine | MIT |
@@ -272,8 +272,8 @@ went into it. That is a data limit, not an engineering one.
 Issues and PRs aren't open to the public on this repo, but we'd love to hear from
 you. Email [contact@mru.space](mailto:contact@mru.space).
 
-## Licence
+## License
 
 Source code under [Apache License 2.0](./LICENSE). The **Mru** name and mark are
 trademarks; see [TRADEMARK.md](./TRADEMARK.md). Bundled data and textures carry
-their own licences, listed in [CREDITS.md](./CREDITS.md).
+their own licenses, listed in [CREDITS.md](./CREDITS.md).

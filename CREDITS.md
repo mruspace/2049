@@ -1,6 +1,6 @@
-# Credits and licences
+# Credits and licenses
 
-Mru 2049 is built almost entirely on other people's work. Two of the licences
+Mru 2049 is built almost entirely on other people's work. Two of the licenses
 below are obligations rather than courtesies, and one of them is share-alike.
 
 ## Star positions
@@ -10,9 +10,9 @@ Yale Bright Star and Gliese catalogues. This project uses 109,389 of its rows
 at their catalogued distances, absolute magnitudes and colour indices.
 
 - <https://codeberg.org/astronexus/hyg>
-- Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-**This is a share-alike licence and it reaches the files derived from it.**
+**This is a share-alike license and it reaches the files derived from it.**
 `public/data/stars/stars.bin`, `star-ids.bin` and `star-names.json` are
 adaptations of the HYG database and are distributed under CC BY-SA 4.0. They
 sit in their own directory with their own `LICENSE` file so the obligation
@@ -31,14 +31,14 @@ and the IAU rotation models, accurate to roughly an arcminute over 1900 to
 2100.
 
 - <https://github.com/cosinekitty/astronomy>
-- Licence: MIT
+- License: MIT
 
 ## Textures
 
 **Solar System Scope**. Planet, Sun, ring and sky maps.
 
 - <https://www.solarsystemscope.com/textures/>
-- Licence: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 Changes made, which CC BY 4.0 requires be noted:
 
@@ -75,7 +75,7 @@ MIT.
 **React**, **Vite**, **Vitest**, **TypeScript**, **ESLint** — MIT.
 
 **ImageMagick** — build-time texture decoding and resizing. Not shipped.
-Apache-2.0-style ImageMagick licence.
+Apache-2.0-style ImageMagick license.
 
 ## Reference values
 
