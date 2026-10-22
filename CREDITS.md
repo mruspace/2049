@@ -94,6 +94,6 @@ number came from is the difference between a physical model and a tuned one.
 
 **Mru 2049**. Source code under [Apache License 2.0](./LICENSE).
 
-**Mru™**, **Mru 2049™** and the Mru logo are trademarks of Binns Pte. Ltd.
+**Mru™**, **Mru 2049™** and the Mru logo are trademarks of Mru Aerospace, Inc.
 Apache 2.0 section 6 does not grant rights to them; see
 [TRADEMARK.md](./TRADEMARK.md).
