@@ -40,6 +40,17 @@ const distanceParsecs = (index: number): number => {
   )
 }
 
+/**
+ * The indices below `count` that fail `ok`. A whole-catalogue check asserts
+ * this is empty once: an expect per star is hundreds of thousands of calls,
+ * which runs past the test timeout on a CI runner.
+ */
+const failing = (count: number, ok: (i: number) => boolean): number[] => {
+  const out: number[] = []
+  for (let i = 0; i < count; i++) if (!ok(i)) out.push(i)
+  return out
+}
+
 describe('packed catalogue', () => {
   it('is a whole number of 20-byte records', () => {
     expect(STAR_RECORD_BYTES).toBe(20)
@@ -54,35 +65,29 @@ describe('packed catalogue', () => {
 
   it('dropped the Sun, which is a real body here and not a sprite', () => {
     // Nothing may sit at the origin, and nothing may be absurdly close.
-    for (let i = 0; i < catalogue.count; i++) {
-      expect(distanceParsecs(i)).toBeGreaterThan(0.01)
-    }
+    expect(failing(catalogue.count, (i) => distanceParsecs(i) > 0.01)).toEqual([])
   })
 
   it('dropped every row with the unknown-parallax placeholder', () => {
     // The placeholder is dist >= 100000 pc. The most distant real star in HYG
     // is a few kiloparsecs.
-    for (let i = 0; i < catalogue.count; i++) {
-      expect(distanceParsecs(i)).toBeLessThan(1e5)
-    }
+    expect(failing(catalogue.count, (i) => distanceParsecs(i) < 1e5)).toEqual([])
   })
 
   it('gives every star a sane absolute magnitude', () => {
-    for (let i = 0; i < catalogue.count; i++) {
+    // Brighter than -12 or fainter than +25 would be off the main sequence
+    // and off every other sequence too. NaN fails both comparisons.
+    expect(failing(catalogue.count, (i) => {
       const absmag = catalogue.positionMag[i * 4 + 3]!
-      expect(Number.isFinite(absmag)).toBe(true)
-      // Brighter than -12 or fainter than +25 would be off the main sequence
-      // and off every other sequence too.
-      expect(absmag).toBeGreaterThan(-12)
-      expect(absmag).toBeLessThan(25)
-    }
+      return absmag > -12 && absmag < 25
+    })).toEqual([])
   })
 
   it('gives every star a colour in range', () => {
-    for (let i = 0; i < catalogue.count * 3; i++) {
-      expect(catalogue.colour[i]!).toBeGreaterThanOrEqual(0)
-      expect(catalogue.colour[i]!).toBeLessThanOrEqual(1)
-    }
+    expect(failing(catalogue.count * 3, (i) => {
+      const c = catalogue.colour[i]!
+      return c >= 0 && c <= 1
+    })).toEqual([])
   })
 })
 
